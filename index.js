@@ -314,7 +314,7 @@
       path = path || '';
       pathList = pathList || [];
       for (var i in obj) {
-        if (hasOwnProperty.call(obj, i)) {
+        if (hasOwnProperty(obj, i)) {
           var childPath = ((path && path + '.') || path) + i;
           if (isObject(obj[i]) || isArray(obj[i])) {
             if (includeEmpty) {
